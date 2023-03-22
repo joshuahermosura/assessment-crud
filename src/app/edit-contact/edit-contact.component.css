@@ -1,0 +1,62 @@
+.container {
+    background-color: #1b1b1b;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    padding: 60px 50px;
+}
+
+h2 {
+    font-size: 24px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+input[type=text], input[type=email], input[type=tel] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    color: black;
+    font-size: 16px;
+}
+
+input[type=submit], button {
+    background-color: #333;
+    border: white 1px solid;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    width: 100px;
+    height: 40px;
+}
+
+input[type=submit]:hover, button:hover {
+    background-color: white;
+    color: #333;
+}
+
+small {
+    font-size: 14px;
+    color: red;
+    margin-bottom: 10px;
+    display: block;
+}

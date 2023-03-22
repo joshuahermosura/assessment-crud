@@ -1,0 +1,16 @@
+{
+  "contacts": [
+    {
+      "name": "Monkey D Luffys",
+      "email": "pirateking@gmail.com",
+      "phone": "092754548383",
+      "id": 1
+    },
+    {
+      "name": "Roronoa ",
+      "email": "mosshead@gmail.com",
+      "phone": "09610015755",
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+input.ng-invalid.ng-touched{
+    border: red 1px solid;
+    background-color: #ffd3e2;
+}
+
+span{
+    color: red;
+}
+
+.input-form {
+    display: flex;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.input-wrapper {
+    margin: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+label {
+    padding-right: 5px;
+    font-size: 15px;
+
+}
+
+.btn {
+    height: 35px;
+    width: 150px;
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+.inp{
+    height: 30px;
+    width: 200px;
+    font-size: 15px;
+}
+p{
+    position: absolute;
+  right: 0;
+}

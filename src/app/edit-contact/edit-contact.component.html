@@ -1,0 +1,24 @@
+<div class="container">
+  <h2>Edit Contact</h2>
+    <form (submit)="addContact($event)" #myForm="ngForm">
+        <label>Name:</label>
+      <input type="text" name="name" [(ngModel)]="contact.name" ngModel required pattern="[a-zA-Z .]*" #name="ngModel">
+      
+
+      <label>Email:</label>
+      <input type="email" name="email" [(ngModel)]="contact.email" ngModel required email #email="ngModel">
+
+      <label>Phone:</label>
+      <input type="tel" name="phone" [(ngModel)]="contact.phone" ngModel required pattern="[0-9]{11,13}" #phone="ngModel">
+
+      <div>
+         <small *ngIf="name.invalid && name.touched">There is something wrong with Name input field.</small>
+         <small *ngIf="email.invalid && email.touched">There is something wrong Email input field.</small>
+         <small *ngIf="phone.invalid && phone.touched">There is something wrong with Phone input field.</small>
+      </div>
+      
+
+      <button type="submit" [disabled]="!myForm.valid">UPDATE</button>
+      <button [routerLink]="['']">Cancel</button>
+    </form>
+</div>

@@ -1,0 +1,35 @@
+<h2 class="title">ADD CONTACT</h2>
+    <form class="input-form" (submit)="addContact()" #myForm="ngForm">
+    
+      <div class="input-wrapper">
+          <label>Name:</label>
+        <input class="inp"type="text" name="name" [(ngModel)]="contact.name" ngModel required pattern="[a-zA-Z .]*" #name="ngModel">
+        <div *ngIf="name.invalid && name.touched">
+          <p style="color: red; font-size: 12px;">*This field is required.</p>
+        </div>
+      
+      </div>
+        
+
+      <div class="input-wrapper">
+        <label>Email:</label>
+      <input class="inp" type="email" name="email" [(ngModel)]="contact.email" ngModel required email #email="ngModel">
+      <div *ngIf="email.invalid && email.touched">
+        <p style="color: red; font-size: 12px;">*This field is required.</p>
+      </div>
+      </div>
+        
+
+      <div class="input-wrapper">
+        <label>Phone:</label>
+      <input class="inp" type="tel" name="phone" [(ngModel)]="contact.phone" ngModel required pattern="[0-9]{11,13}" #phone="ngModel">
+      <div *ngIf="phone.invalid && phone.touched">
+        <p style="color: red; font-size: 12px;">*This field is required.</p>
+      </div>
+      </div>
+        
+      <div class="input-wrapper">
+        <button class="btn" type="submit" [disabled]="!myForm.valid">Add Contact</button>
+      </div>
+      
+    </form>

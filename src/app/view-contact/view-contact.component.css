@@ -1,0 +1,41 @@
+
+  .container {
+    margin: 50px auto;
+    max-width: 1000px;
+    text-align: center;
+    background-color: #1b1b1b;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 20px 30px;
+  }
+
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  button {
+    background-color: #333;
+    border: white 1px solid;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    width: 100px;
+    height: 40px;
+  }
+
+  button:hover {
+    background-color: #fff;
+    color: #000;
+  }

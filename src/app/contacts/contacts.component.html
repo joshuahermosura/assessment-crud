@@ -1,0 +1,48 @@
+
+    <nav>
+        <h1>MY CONTACT LIST</h1>
+    </nav>
+    
+    <table class="my-table">
+        <thead>
+            <tr>
+               
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let contact of contacts">
+                    <td>{{ contact.id }}</td>
+                    <td>{{ contact.name }}</td>
+                    <td>{{ contact.email }}</td>
+                    <td>{{ contact.phone }}</td>
+
+                    <td>
+                        <button
+                        class="btn-view"
+                        (click)="onViewContact(contact.id)"
+                        >
+                        View</button>
+
+                        <button
+                        class="btn-edit"
+                        (click)="onEditContact(contact.id)"
+                        >
+                        Edit</button>
+
+                        <button
+                        class="btn-delete"
+                        (click)="onDeleteContact(contact.id)"
+                        >
+                        Delete</button>
+                    </td>
+         
+            </tr>
+        </tbody>
+    </table>
+
+    

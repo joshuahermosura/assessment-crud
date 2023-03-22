@@ -1,0 +1,53 @@
+.my-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+  }
+  
+  .my-table thead th {
+    text-align: left;
+    font-weight: bold;
+    padding: 20px;
+    padding-left: 100px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .my-table tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #e6e6e6;
+    background-color: #f6f6f6;
+    text-align: center;
+  }
+
+  
+  .my-table tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .my-table tbody td button {
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    margin-right: 10px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 2px 5px
+  }
+  
+  .my-table tbody td button:hover {
+    background-color: white;
+    color: #333;
+  }
+  
+  .my-table tbody td button:focus {
+    outline: none;
+  }
+  
+  .my-table tbody td button:last-child {
+    margin-right: 0;
+  }
